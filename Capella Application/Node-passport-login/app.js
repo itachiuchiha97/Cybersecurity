@@ -1,10 +1,18 @@
 const express = require('express')
+const expressLayouts = require('express-ejs-layouts')
 
 const app = express()
+
+//EJS
+app.use(expressLayouts)
+app.set('view engine','ejs')
+//positioning is important otherwise fail to work
 
 //Routes below
 app.use('/',require('./routes/index'))
 app.use('/users',require('./routes/users'))
+
+
 
 
 
