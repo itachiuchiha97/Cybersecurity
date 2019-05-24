@@ -9,6 +9,9 @@ npm i express bcryptjs passport passport-local ejs express-ejs-layouts mongoose 
 Developer sugar:
 npm i -D nodemon
 
+To run app:
+npm init dev
+
 
 
 
